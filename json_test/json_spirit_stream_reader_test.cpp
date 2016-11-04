@@ -5,7 +5,7 @@
 
 #include "json_spirit_stream_reader_test.h"
 #include "utils_test.h"
-#include "json_spirit_stream_reader.h"
+#include "json_spirit/json_spirit_stream_reader.h"
 
 #include <sstream>
 #include <boost/assign/list_of.hpp>

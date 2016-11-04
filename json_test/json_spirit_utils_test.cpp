@@ -5,7 +5,7 @@
 
 #include "json_spirit_utils_test.h"
 #include "utils_test.h"
-#include "json_spirit_utils.h"
+#include "json_spirit/json_spirit_utils.h"
 
 #include <boost/assign/list_of.hpp>
 

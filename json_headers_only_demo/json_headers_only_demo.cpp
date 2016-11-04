@@ -7,8 +7,8 @@
 // using header files only, i.e. not linking to the JSON Spirit object library.
 // In this demo objects are stored as a vector of name/value pairs.
 
-#include "json_spirit_reader_template.h"
-#include "json_spirit_writer_template.h"
+#include "json_spirit/json_spirit_reader_template.h"
+#include "json_spirit/json_spirit_writer_template.h"
 #include <cassert>
 #include <fstream>
 

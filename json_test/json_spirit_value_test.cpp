@@ -5,7 +5,7 @@
 
 #include "json_spirit_value_test.h"
 #include "utils_test.h"
-#include "json_spirit_value.h"
+#include "json_spirit/json_spirit_value.h"
 #include <limits.h>
 #include <list>
 #include <boost/assign/list_of.hpp>

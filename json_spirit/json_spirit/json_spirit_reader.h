@@ -11,7 +11,7 @@
 #endif
 
 #include "json_spirit_value.h"
-#include "json_spirit_error_position.h"
+#include "json_spirit/json_spirit_error_position.h"
 #include <iostream>
 
 namespace json_spirit

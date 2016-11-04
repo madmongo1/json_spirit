@@ -5,8 +5,8 @@
 
 #include "json_spirit_writer_test.h"
 #include "utils_test.h"
-#include "json_spirit_writer.h"
-#include "json_spirit_value.h" 
+#include "json_spirit/json_spirit_writer.h"
+#include "json_spirit/json_spirit_value.h"
 
 #include <sstream>
 #include <boost/integer_traits.hpp>

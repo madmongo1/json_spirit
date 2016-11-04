@@ -1,0 +1,17 @@
+# - Config file for the JSONSpirit package
+# It defines the following variables
+#  JSONSpirit_INCLUDE_DIRS - include directories for JSONSpirit
+#  JSONSpirit_LIBRARIES    - libraries to link against
+
+# Compute paths
+get_filename_component(JSONSpirit_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+set(JSONSpirit_INCLUDE_DIRS "@INSTALL_INCLUDE_DIR@")
+
+# Our library dependencies (contains definitions for IMPORTED targets)
+if(NOT TARGET json_spirit AND NOT JSONSpirit_BINARY_DIR)
+  include("${JSONSpirit_CMAKE_DIR}/JSONSpiritTargets.cmake")
+endif()
+
+# These are IMPORTED targets created by JSONSpiritTargets.cmake
+set(JSONSpirit_LIBRARIES json_spirit)
+set(JSONSpirit_LIBRARY_DIR @INSTALL_LIB_DIR@)

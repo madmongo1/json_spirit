@@ -6,7 +6,7 @@
 // This demo shows you how to read and write JSON objects and arrays.
 // In this demo objects are stored as a vector of name/value pairs.
 
-#include "json_spirit.h"
+#include "json_spirit/json_spirit.h"
 #include <cassert>
 #include <fstream>
 

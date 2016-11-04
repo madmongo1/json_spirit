@@ -5,9 +5,9 @@
 
 #include "json_spirit_reader_test.h"
 #include "utils_test.h"
-#include "json_spirit_reader.h"
-#include "json_spirit_value.h" 
-#include "json_spirit_writer.h" 
+#include "json_spirit/json_spirit_reader.h"
+#include "json_spirit/json_spirit_value.h"
+#include "json_spirit/json_spirit_writer.h"
 
 #include <limits.h>
 #include <sstream>
@@ -832,13 +832,13 @@ namespace
 
         test_read( "[\"" + s + "\"]", value );
 
-        assert_eq( value.get_array()[0].get_str(), "äöüß" );
+        assert_eq( value.get_array()[0].get_str(), "ï¿½ï¿½ï¿½ï¿½" );
     }
 
     void test_extended_ascii()
     {
         test_extended_ascii( "\\u00E4\\u00F6\\u00FC\\u00DF" );
-        test_extended_ascii( "äöüß" );
+        test_extended_ascii( "ï¿½ï¿½ï¿½ï¿½" );
     }
 #endif
 }
